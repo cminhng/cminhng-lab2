@@ -11,13 +11,14 @@ public class DotChaser {
    *
    * A STATIC CLASS? OH NO! GET IT OUT OF HERE!
    */
+  /*
   public static class Thing {
     // dir: 0=North, 1=East, 2=South, 3=West.
     // timeSinceLast: this is only important for "TypeB" Things.
     public int  row, col, dir, timeSinceLast;
     public char lab = 'r';
     public boolean isTypeB;
-  }
+  }*/
 
   /**
    * YOU'LL NEED TO PUT THIS SOMEWHERE ELSE
@@ -29,7 +30,7 @@ public class DotChaser {
     public Thing data;
     public Node  next;
   }
-
+/* 
   // EEEEEK! STATIC METHODS!!! PLEASE FIND THEM A BETTER HOME.
   public static void rightTurn(Thing t) {
     t.dir = (t.dir + 1) % 4;
@@ -76,7 +77,7 @@ public class DotChaser {
     t.row += dr[t.dir];
     t.col += dc[t.dir];
   }
-
+*/
   
   /**
    * This static method is ok :)

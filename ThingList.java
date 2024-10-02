@@ -10,7 +10,7 @@ public class ThingList {
         next = null;
     }
 
-    public void addThing(){
+    public void addThing(Thing t){
 
     }
 
