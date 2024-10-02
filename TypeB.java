@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class TypeB extends Thing{
     public int timeSinceLast;
 
@@ -7,15 +9,16 @@ public class TypeB extends Thing{
         timeSinceLast = 0;
     }
 
-    protected void rightTurn(){
+    public void rightTurn(){
         super.rightTurn();
     }
 
-    protected void leftTurn(){
+    public void leftTurn(){
         super.leftTurn();
     }
 
-    protected void maybeTurn(){
+    public void maybeTurn(Random rand){
+
         int i = rand.nextInt(3);
         timeSinceLast++;
 
@@ -32,7 +35,7 @@ public class TypeB extends Thing{
         }
     }
 
-    protected void step(){
+    public void step(){
         super.step();
     }
 

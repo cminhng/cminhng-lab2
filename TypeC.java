@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class TypeC extends TypeB{
 
     public TypeC(int row, int col){
@@ -5,19 +7,19 @@ public class TypeC extends TypeB{
         lab = 'y';
     }
 
-    protected void rightTurn(){
+    public void rightTurn(){
         super.rightTurn();
     }
 
-    protected void leftTurn(){
+    public void leftTurn(){
         super.leftTurn();
     }
 
-    protected void maybeTurn(){
-        super.maybeTurn();
+    public void maybeTurn(Random rand){
+        super.maybeTurn(rand);
     }
 
-    protected void step(){
+    public void step(){
         final int[] d = {1, 1, -1, -1};
         row += d[dir];
         col += d[dir];

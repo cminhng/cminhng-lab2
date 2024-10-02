@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class DotChaser {
-  //public static Random rand = new Random(System.currentTimeMillis());
+  public static Random rand = new Random(System.currentTimeMillis());
 
   /**
    * A "Thing" moves in a grid world. A TypeA Thing randomly
@@ -76,7 +76,7 @@ public class DotChaser {
       1, 0, -1, 0
     };
     t.row += dr[t.dir];
-    t.col += dc[t.dir];
+    t.col += dc[t.dir];,
   }
 */
   
@@ -148,7 +148,7 @@ public class DotChaser {
       System.out.println("done");
       System.out.flush();
 
-      llist.moveAll();
+      llist.moveAll(rand);
       // Move each thing.
       /* 
       // (SEEMS LIKE A NICE MOVEALL() METHOD CALL WOULD WORK HERE)

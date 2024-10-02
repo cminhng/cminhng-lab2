@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class ThingList {
     private int count;
     public Node head;
@@ -55,11 +57,12 @@ public class ThingList {
         }
     }
 
-    public void moveAll(){
+    public void moveAll(Random rand){
         //loop thru list and move all
         if(!this.isEmpty()){
             Node it = head;
             while(it.next != null){
+                it.data.maybeTurn(rand);
                 it.data.step();
                 it = it.next;
             }

@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class TypeA extends Thing {
 
     public TypeA(int row, int col){
@@ -5,19 +7,27 @@ public class TypeA extends Thing {
         lab = 'r';
     }
 
-    protected void rightTurn(){
+    public void rightTurn(){
         super.rightTurn();
     }
 
-    protected void leftTurn(){
+    public void leftTurn(){
         super.leftTurn();
     }
 
-    protected void maybeTurn(){
-        super.maybeTurn();
+    public void maybeTurn(Random rand){
+        int i = rand.nextInt(3);
+        
+        if (i == 1) {
+            this.rightTurn();
+        }
+    
+        if (i == 2) {
+            this.leftTurn();
+        }
     }
 
-    protected void step(){
+    public void step(){
         super.step();
     }
 
