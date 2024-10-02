@@ -54,6 +54,8 @@ public class ThingList {
                 System.out.println(it.data.toString());
                 it = it.next;
             }
+            //last llist item
+            System.out.println(it.data.toString());
         }
     }
 
@@ -66,6 +68,9 @@ public class ThingList {
                 it.data.step();
                 it = it.next;
             }
+            //last llist item
+            it.data.maybeTurn(rand);
+            it.data.step();
         }
     }
 }

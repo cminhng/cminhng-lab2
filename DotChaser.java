@@ -110,7 +110,7 @@ public class DotChaser {
 
         llist.addThing(tB);
 
-        TypeC tC = new TypeC(65, 50);
+        TypeC tC = new TypeC(55, 50);
 
         llist.addThing(tC);
 
