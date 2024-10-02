@@ -1,7 +1,7 @@
 public class TypeC extends TypeB{
 
-    public TypeC(int row, int col, int dir, int timeSince){
-        super(row, col, dir, timeSince);
+    public TypeC(int row, int col){
+        super(row, col);
         lab = 'y';
     }
 

@@ -1,10 +1,10 @@
 public class TypeB extends Thing{
     public int timeSinceLast;
 
-    public TypeB(int row, int col, int dir, int timeSince){
-        super(row, col, dir);
+    public TypeB(int row, int col){
+        super(row, col);
         lab = 'b';
-        timeSinceLast = timeSince;
+        timeSinceLast = 0;
     }
 
     protected void rightTurn(){

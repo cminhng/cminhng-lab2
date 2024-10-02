@@ -1,7 +1,7 @@
 public class TypeA extends Thing {
 
-    public TypeA(int row, int col, int dir){
-        super(row, col, dir);
+    public TypeA(int row, int col){
+        super(row, col);
         lab = 'r';
     }
 

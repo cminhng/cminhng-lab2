@@ -1,15 +1,16 @@
 import java.util.*;
 
 public abstract class Thing {
-    public Random rand = new Random(System.currentTimeMillis());
+
+    protected Random rand = new Random(System.currentTimeMillis());
     public int  row, col, dir;
     // dir: 0=North, 1=East, 2=South, 3=West.
     public char lab;
 
-    public Thing(int row, int col, int dir){
+    public Thing(int row, int col){
         this.row = row;
         this.col = col;
-        this.dir = dir;
+        dir = 0;
     }
 
     protected void rightTurn(){
@@ -24,11 +25,11 @@ public abstract class Thing {
         int i = rand.nextInt(3);
         if (i == 1) {
             this.rightTurn();
-          }
+        }
     
-          if (i == 2) {
+        if (i == 2) {
             this.leftTurn();
-          }
+        }
     }
     
     protected void step(){
