@@ -7,14 +7,6 @@ public class TypeA extends Thing {
         lab = 'r';
     }
 
-    public void rightTurn(){
-        super.rightTurn();
-    }
-
-    public void leftTurn(){
-        super.leftTurn();
-    }
-
     public void maybeTurn(Random rand){
         int i = rand.nextInt(3);
         
@@ -27,11 +19,4 @@ public class TypeA extends Thing {
         }
     }
 
-    public void step(){
-        super.step();
-    }
-
-    public String toString(){
-        return super.toString();
-    }
 }

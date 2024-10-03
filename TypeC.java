@@ -7,35 +7,21 @@ public class TypeC extends TypeB{
         timeSinceLast = 0;
     }
 
-    public void rightTurn(){
-        super.rightTurn();
-    }
-
-    public void leftTurn(){
-        super.leftTurn();
-    }
-
     public void maybeTurn(Random rand){
-        int i = rand.nextInt(3);
+        int lastTurn = rand.nextInt(2);
         timeSinceLast++;
-
-        if (timeSinceLast == 2) {
+        if(timeSinceLast == 3){
             timeSinceLast = 0;
-
-            if (i == 1) {
-            this.rightTurn();
+            if (lastTurn == 1) {
+                this.rightTurn();
+                this.step();
             }
 
-            if (i == 2) {
-            this.leftTurn();
+            if (lastTurn == 2) {
+                this.leftTurn();
+                this.step();
             }
         }
-    }
-    
-    public void step(){
-        final int[] dr = {1, 5, -3, -1}, dc = {12, 2, -1, -11};
-        row += dr[dir];
-        col += dc[dir];
     }
     
     public String toString(){

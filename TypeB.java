@@ -9,14 +9,6 @@ public class TypeB extends Thing{
         timeSinceLast = 0;
     }
 
-    public void rightTurn(){
-        super.rightTurn();
-    }
-
-    public void leftTurn(){
-        super.leftTurn();
-    }
-
     public void maybeTurn(Random rand){
 
         int i = rand.nextInt(3);
@@ -35,11 +27,4 @@ public class TypeB extends Thing{
         }
     }
 
-    public void step(){
-        super.step();
-    }
-
-    public String toString(){
-        return super.toString();
-    }
 }
