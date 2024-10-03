@@ -1,0 +1,53 @@
+commit 32e8483e99827461b1566cbfbc2cd22a6de298a4
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Thu Oct 3 08:47:42 2024 -0700
+
+    removed all left/right/step methods from types A/B/C to pass test 4. modified typeC movement to make spirals. cleaned up DotChaser file
+
+commit b4d0e9cea6c691056e4c87dde6e309520978262d
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Wed Oct 2 14:13:44 2024 -0700
+
+    fixed issue with typeC not being printed/stepped in ThingList, changed movement of typeC
+
+commit f0e306169387a40c7b8158b9898958207fdf7511
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Wed Oct 2 13:32:26 2024 -0700
+
+    changed visibility modifers and rand param to pass tests 5, 7, 8
+
+commit 18a3a19bc96573e047eb7c5b035cf7a3f80313c6
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Wed Oct 2 12:43:23 2024 -0700
+
+    added wrapper class Node to ThingList, added add, printall, and moveall methods
+
+commit 096d8b89799bb2459d8c46be58238a9aee4efb97
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Wed Oct 2 09:29:51 2024 -0700
+
+    added/completed all methods for TypeA/B/C
+
+commit 9c96dfa666e84d6e8ffa8ab81ca39707b92f3ffe
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Tue Oct 1 14:33:35 2024 -0700
+
+    added left/right/maybe Turns + step methods to Thing.java
+
+commit 78c69884c4c93c0ff09e3f56435faf1e441ef756
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Mon Sep 30 12:18:41 2024 -0700
+
+    added basic constructors & toString methods for Thing, TypeA, TypeB, TypeC, ThingList
+
+commit 80ad12ba7a7cbed324d03122614ebb91b049af53
+Author: christine nguyen <cminhng@cmng-MacBook-Pro.local>
+Date:   Mon Sep 30 11:21:52 2024 -0700
+
+    added 5 additional files
+
+commit 19b848615ad131bca0d33a69f3ad23b8c387be73
+Author: cminhng <christine.nguyen1@gwmail.gwu.edu>
+Date:   Mon Sep 30 11:19:19 2024 -0700
+
+    Add files via upload
